@@ -1,0 +1,43 @@
+# Environment Configuration for DOAC System
+# Copy this file to .env and update with your actual values
+
+# API Keys
+POLYGON_API_KEY=your_polygon_api_key_here
+ALPHA_VANTAGE_API_KEY=your_alpha_vantage_key_here
+
+# Redis Configuration
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_DB=0
+
+# Database Configuration (if using)
+DATABASE_URL=postgresql://user:password@localhost:5432/doac_db
+
+# Logging Configuration
+LOG_LEVEL=INFO
+LOG_FILE=doac_system.log
+
+# System Configuration Overrides
+# Uncomment and modify to override default settings
+
+# MAX_POSITION_SIZE=0.20
+# ENTRY_Z_THRESHOLD=2.2
+# EXIT_Z_THRESHOLD=0.4
+# TARGET_SHARPE=2.5
+# MAX_GROSS_LEVERAGE=4.0
+
+# Data Configuration
+# DATA_START_DATE=2018-01-01
+# DATA_END_DATE=2024-12-31
+# BACKTEST_START_DATE=2020-01-01
+
+# Performance Monitoring
+ENABLE_PERFORMANCE_MONITORING=true
+MONITORING_ENDPOINT=http://localhost:8080/metrics
+
+# Email Notifications (optional)
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USERNAME=your_email@gmail.com
+SMTP_PASSWORD=your_app_password
+ALERT_EMAIL=alerts@yourcompany.com 
